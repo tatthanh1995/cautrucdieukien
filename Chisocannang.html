@@ -9,7 +9,7 @@
 <script>
   let height = prompt("Nhập chiều cao (m)")
   let weight = prompt("Nhập cân nặng (kg)")
-  let bmi = weight/(Math.pow(height, 2))
+  let bmi = weight/(height*height)
 
   if (bmi<18.5) {
 
