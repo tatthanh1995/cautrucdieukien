@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<form>
+    <p id="result"></p>
+</form>
+<script>
+    var num1 = parseInt(prompt("Nhập vào số thứ nhất"));
+    var num2 = parseInt(prompt("Nhập vào số thứ hai"));
+    var result = num1 % num2;
+
+
+        if (result === 0) {
+            document.getElementById("result").innerHTML = num1 + " chia hết " + num2
+        } else {
+            document.getElementById("result").innerHTML = num1 + " không chia hết " + num2 + " dư " + result
+        }
+
+</script>
+</body>
+</html>
