@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="max"></p>
+<script>
+  let num1 = parseInt(prompt("số1"));
+  let num2 = parseInt(prompt("số2"));
+  let num3 = parseInt(prompt("số3"));
+  if (num1 > num2) {
+    if (num1 > num3) {
+      document.getElementById("max").innerHTML = num1 + " là số lớn nhất"
+    } else if (num1 < num3) {
+      document.getElementById("max").innerHTML = num3 + " là số lớn nhất"
+    }
+  }
+  if (num1<num2) {
+    if (num2 > num3) {
+      document.getElementById("max").innerHTML = num2 + " là số lớn nhất"
+    } else if (num2 < num3) {
+      document.getElementById("max").innerHTML = num3 + " là số lớn nhất"
+    }
+  }
+
+</script>
+
+</body>
+</html>
