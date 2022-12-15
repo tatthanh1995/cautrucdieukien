@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<p>
+  <form>
+<table border="1">
+  <tr>
+    <th> Điểm kiểm tra</th>
+    <th> Điểm giữa kì</th>
+    <th> Điểm cuối kì</th>
+    <th> Điểm trung bình</th>
+    <th> Xếp hạng</th>
+  </tr>
+  <tr>
+    <td> <input type="number" id="test1"></td>
+    <td> <input type="number" id="test2"></td>
+    <td> <input type="number" id="test3"></td>
+    <td id="avg"></td>
+    <td id="rank"></td>
+  </tr>
+</table>
+  <button type="button" name="tinhdiemtrungbinh" onclick="avgscore()">Tính</button>
+</form>
+<script>
+  let num1 = document.getElementById("number1").value;
+  let num2 = document.getElementById("number1").value;
+  let num3 = document.getElementById("number1").value;
+  let avg = (Number(num1)+Number(num2)+Number(num3))/3
+
+  function avgscore() {
+    if (avg < 5) {
+      document.getElementById("avg").innerText = avg;
+      document.getElementById("rank").innerText = "F";
+    }
+    else if (avg < 6.5) {
+      document.getElementById("avg").innerText = avg;
+      document.getElementById("rank").innerText = "D";
+    }
+    else if (avg < 8) {
+      document.getElementById("avg").innerText = avg;
+      document.getElementById("rank").innerText = "C";
+    }
+    else if (avg < 9) {
+      document.getElementById("avg").innerText = avg;
+      document.getElementById("rank").innerText = "B";
+    }
+    else if (avg <= 10) {
+      document.getElementById("avg").innerText = avg;
+      document.getElementById("rank").innerText = "A";
+    }
+  }
+</script>
+</body>
+</html>
